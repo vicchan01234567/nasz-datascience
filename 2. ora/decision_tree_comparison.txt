@@ -1,6 +1,8 @@
 Independent 80/20 stratified Gini decision-tree experiments
 Each model uses a separate random split and its own remaining 20% test set.
-Accuracy values use different test sets and should not be treated as a direct paired comparison.
+Each model's train and test accuracy are reported separately.
+Models use different test sets, so test accuracies are not a direct paired comparison.
 
-depth21_leaf1: accuracy=0.8034, train=713, test=178, seed=42, root=categorical__Sex_female <= 0.5000
-depth15_leaf5: accuracy=0.8315, train=713, test=178, seed=43, root=categorical__Sex_female <= 0.5000
+depth21_leaf1: train_accuracy=0.9341, test_accuracy=0.8034, train=713, test=178, seed=42, root=categorical__Sex_female <= 0.5000
+depth15_leaf5: train_accuracy=0.8668, test_accuracy=0.8315, train=713, test=178, seed=43, root=categorical__Sex_female <= 0.5000
+depth10_leaf10: train_accuracy=0.8569, test_accuracy=0.7697, train=713, test=178, seed=44, root=categorical__Sex_female <= 0.5000

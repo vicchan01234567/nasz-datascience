@@ -11,6 +11,7 @@ Requested min_samples_leaf: 0 (invalid in scikit-learn; used smallest valid valu
 Missing feature values: imputed from training data only (numeric median, categorical mode)
 Actual tree depth: 21
 Tree nodes: 337
+Training accuracy: 0.9341
 Evaluation accuracy: 0.8034
 
 Evaluation classification report:

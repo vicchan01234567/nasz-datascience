@@ -10,6 +10,7 @@ min_samples_leaf: 5
 Missing feature values: imputed from training data only (numeric median, categorical mode)
 Actual tree depth: 15
 Tree nodes: 141
+Training accuracy: 0.8668
 Evaluation accuracy: 0.8315
 
 Evaluation classification report:

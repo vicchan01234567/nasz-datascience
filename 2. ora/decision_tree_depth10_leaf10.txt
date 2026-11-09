@@ -1,0 +1,163 @@
+Titanic survival decision tree: depth10_leaf10
+Data: C:\Users\Viri\Desktop\titanic.csv
+Rows: 891
+Random seed: 44
+Training sample: 713 rows (80.0%), stratified
+Evaluation rows: 178
+Criterion: Gini impurity
+max_depth: 10
+min_samples_leaf: 10
+Missing feature values: imputed from training data only (numeric median, categorical mode)
+Actual tree depth: 10
+Tree nodes: 69
+Training accuracy: 0.8569
+Evaluation accuracy: 0.7697
+
+Evaluation classification report:
+                     precision    recall  f1-score   support
+
+Did not survive (0)       0.79      0.86      0.82       110
+       Survived (1)       0.74      0.62      0.67        68
+
+           accuracy                           0.77       178
+          macro avg       0.76      0.74      0.75       178
+       weighted avg       0.77      0.77      0.77       178
+
+Tree branches (True follows <= threshold; False follows > threshold):
+NODE 0 (gini=0.4732, samples=713, predict=0): categorical__Sex_female <= 0.5000
+  True:
+    NODE 1 (gini=0.2903, samples=454, predict=0): numeric__Pclass <= 1.5000
+      True:
+        NODE 2 (gini=0.4681, samples=99, predict=0): numeric__Age <= 53.0000
+          True:
+            NODE 3 (gini=0.4893, samples=82, predict=0): numeric__Age <= 47.5000
+              True:
+                NODE 4 (gini=0.4739, samples=70, predict=0): numeric__Age <= 27.5000
+                  True:
+                    LEAF (gini=0.4688, samples=16, predict=1)
+                  False:
+                    NODE 6 (gini=0.4314, samples=54, predict=0): numeric__Age <= 30.5000
+                      True:
+                        LEAF (gini=0.3200, samples=25, predict=0)
+                      False:
+                        NODE 8 (gini=0.4851, samples=29, predict=0): numeric__Age <= 36.5000
+                          True:
+                            LEAF (gini=0.4200, samples=10, predict=1)
+                          False:
+                            LEAF (gini=0.3878, samples=19, predict=0)
+              False:
+                LEAF (gini=0.4444, samples=12, predict=1)
+          False:
+            LEAF (gini=0.2076, samples=17, predict=0)
+      False:
+        NODE 13 (gini=0.2129, samples=355, predict=0): numeric__Age <= 3.5000
+          True:
+            LEAF (gini=0.3967, samples=11, predict=1)
+          False:
+            NODE 15 (gini=0.1828, samples=344, predict=0): numeric__Age <= 10.5000
+              True:
+                LEAF (gini=0.4200, samples=10, predict=0)
+              False:
+                NODE 17 (gini=0.1733, samples=334, predict=0): numeric__Age <= 34.2500
+                  True:
+                    NODE 18 (gini=0.1969, samples=271, predict=0): categorical__Embarked_C <= 0.5000
+                      True:
+                        NODE 19 (gini=0.1753, samples=237, predict=0): numeric__Age <= 30.5000
+                          True:
+                            NODE 20 (gini=0.1475, samples=212, predict=0): numeric__Parch <= 0.5000
+                              True:
+                                NODE 21 (gini=0.1570, samples=198, predict=0): numeric__Age <= 23.5000
+                                  True:
+                                    NODE 22 (gini=0.1229, samples=76, predict=0): numeric__Age <= 21.5000
+                                      True:
+                                        LEAF (gini=0.1600, samples=57, predict=0)
+                                      False:
+                                        LEAF (gini=0.0000, samples=19, predict=0)
+                                  False:
+                                    NODE 25 (gini=0.1774, samples=122, predict=0): numeric__Age <= 27.5000
+                                      True:
+                                        LEAF (gini=0.2449, samples=35, predict=0)
+                                      False:
+                                        LEAF (gini=0.1480, samples=87, predict=0)
+                              False:
+                                LEAF (gini=0.0000, samples=14, predict=0)
+                          False:
+                            NODE 29 (gini=0.3648, samples=25, predict=0): numeric__Age <= 32.5000
+                              True:
+                                LEAF (gini=0.4444, samples=15, predict=0)
+                              False:
+                                LEAF (gini=0.1800, samples=10, predict=0)
+                      False:
+                        NODE 32 (gini=0.3270, samples=34, predict=0): numeric__Age <= 27.5000
+                          True:
+                            LEAF (gini=0.4200, samples=10, predict=0)
+                          False:
+                            LEAF (gini=0.2778, samples=24, predict=0)
+                  False:
+                    NODE 35 (gini=0.0615, samples=63, predict=0): numeric__Age <= 44.5000
+                      True:
+                        LEAF (gini=0.0000, samples=36, predict=0)
+                      False:
+                        NODE 37 (gini=0.1372, samples=27, predict=0): numeric__Age <= 50.5000
+                          True:
+                            LEAF (gini=0.1653, samples=11, predict=0)
+                          False:
+                            LEAF (gini=0.1172, samples=16, predict=0)
+  False:
+    NODE 40 (gini=0.3760, samples=259, predict=1): numeric__Pclass <= 2.5000
+      True:
+        NODE 41 (gini=0.0703, samples=137, predict=1): numeric__Age <= 15.5000
+          True:
+            LEAF (gini=0.1800, samples=10, predict=1)
+          False:
+            NODE 43 (gini=0.0610, samples=127, predict=1): numeric__Pclass <= 1.5000
+              True:
+                NODE 44 (gini=0.0274, samples=72, predict=1): numeric__Age <= 49.5000
+                  True:
+                    LEAF (gini=0.0000, samples=61, predict=1)
+                  False:
+                    LEAF (gini=0.1653, samples=11, predict=1)
+              False:
+                NODE 47 (gini=0.1031, samples=55, predict=1): numeric__Age <= 26.5000
+                  True:
+                    LEAF (gini=0.1975, samples=18, predict=1)
+                  False:
+                    NODE 49 (gini=0.0526, samples=37, predict=1): numeric__Age <= 37.0000
+                      True:
+                        LEAF (gini=0.0000, samples=24, predict=1)
+                      False:
+                        LEAF (gini=0.1420, samples=13, predict=1)
+      False:
+        NODE 52 (gini=0.4999, samples=122, predict=1): categorical__Embarked_S <= 0.5000
+          True:
+            NODE 53 (gini=0.4183, samples=47, predict=1): numeric__Age <= 16.5000
+              True:
+                LEAF (gini=0.2604, samples=13, predict=1)
+              False:
+                NODE 55 (gini=0.4567, samples=34, predict=1): categorical__Embarked_Q <= 0.5000
+                  True:
+                    LEAF (gini=0.5000, samples=10, predict=0)
+                  False:
+                    LEAF (gini=0.4132, samples=24, predict=1)
+          False:
+            NODE 58 (gini=0.4743, samples=75, predict=0): numeric__Age <= 27.5000
+              True:
+                NODE 59 (gini=0.4998, samples=45, predict=0): numeric__SibSp <= 1.5000
+                  True:
+                    NODE 60 (gini=0.4775, samples=33, predict=1): numeric__Parch <= 0.5000
+                      True:
+                        NODE 61 (gini=0.4991, samples=23, predict=1): numeric__Age <= 21.5000
+                          True:
+                            LEAF (gini=0.4800, samples=10, predict=0)
+                          False:
+                            LEAF (gini=0.4734, samples=13, predict=1)
+                      False:
+                        LEAF (gini=0.3200, samples=10, predict=1)
+                  False:
+                    LEAF (gini=0.2778, samples=12, predict=0)
+              False:
+                NODE 66 (gini=0.3578, samples=30, predict=0): numeric__Age <= 29.5000
+                  True:
+                    LEAF (gini=0.1327, samples=14, predict=0)
+                  False:
+                    LEAF (gini=0.4688, samples=16, predict=0)
