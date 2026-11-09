@@ -19,11 +19,11 @@ A `Survived` oszlopot célnak, a `Pclass`, `Sex`, `Age`, `SibSp`, `Parch` és `E
 
 Kipróbáltam a hiányzó értékek leginkább hasonló utastól való pótlását, de ez egyelőre zsákutcának bizonyult. A modellek a hiányzó értékeket a tanítóadatok mediánjával vagy leggyakoribb kategóriájával pótolták.
 
-Három Gini-alapú döntési fát tanítottam külön-külön, rétegzett, véletlen 80/20-as felosztásokon. A `min_samples_leaf=0` érvénytelen, ezért az első modellnél 1-et használtam. Mivel a felosztások eltérnek, az eredmények nem közvetlenül összehasonlíthatók.
+Három Gini-alapú döntési fát tanítottam külön-külön, rétegzett, véletlen 80/20-as felosztásokon. (Mivel a felosztások eltérnek, az eredmények nem közvetlenül összehasonlíthatók.)
 
 | Módszer | Beállítások | Tanuló pontosság | Tesztpontosság |
 |---|---|---:|---:|
-| Döntési fa, Gini | `max_depth=21`, `min_samples_leaf=1` (0 helyett) | 93,4% | 80,3% |
+| Döntési fa, Gini | `max_depth=21`, `min_samples_leaf=1` | 93,4% | 80,3% |
 | Döntési fa, Gini | `max_depth=15`, `min_samples_leaf=5` | 86,7% | 83,1% |
 | Döntési fa, Gini | `max_depth=21`, `min_samples_leaf=10` | 85,7% | 77,0% |
 
