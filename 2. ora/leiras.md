@@ -1,6 +1,6 @@
 # 2. óra – Gépi tanulás a Titanic-adatsoron
 
-A házi feladat második részében két modellt és legalább három-három hiperparaméter-beállítást kellett kipróbálnom, majd a tanuló- és tesztpontosság alapján értékelnem a túlillesztést. A megoldásomban a döntési fákra összpontosítottam.
+A házi feladat második részében két modellt és legalább három-három hiperparaméter-beállítást kellett kipróbálnom, majd a tanuló- és tesztpontosság alapján értékelnem a túlillesztést. A megoldásomban a döntési fákra és random forestekre összpontosítottam.
 
 ## Órai viszonyítási alap
 
@@ -17,13 +17,13 @@ A házi feladat második részében két modellt és legalább három-három hip
 
 A `Survived` oszlopot célnak, a `Pclass`, `Sex`, `Age`, `SibSp`, `Parch` és `Embarked` oszlopokat bemenetnek használtam. A `PassengerId`, `Name`, `Ticket`, `Cabin` és `Fare` mezőket az egyszerűbb, alapjellemzőkre szűkített első modell kedvéért hagytam el.
 
-Kipróbáltam a hiányzó értékek leginkább hasonló utastól való pótlását, de ezt egyelőre zsákutcának tekintettem. Ehelyett a hiányzó értékeket a modellek a tanítóadatok mediánjával vagy leggyakoribb kategóriájával pótolták.
+Kipróbáltam a hiányzó értékek leginkább hasonló utastól való pótlását, de ezt egyelőre zsákutcának bizonyult. Ehelyett a hiányzó értékeket a modellek a tanítóadatok mediánjával vagy leggyakoribb kategóriájával pótolták.
 
-Mindkét Gini-alapú döntési fát rétegzett, véletlen 80/20-as felosztással tanítottam és teszteltem. A `min_samples_leaf=0` érvénytelen, ezért az első modellnél a legkisebb megengedett értéket, az 1-et használtam. A két modell különböző felosztása miatt az eredmények csak tájékoztató jelleggel hasonlíthatók össze.
+Mindkét Gini-alapú döntési fát rétegzett, véletlen 80/20-as felosztással tanítottam és teszteltem. (A két modell különböző felosztása miatt az eredmények csak tájékoztató jelleggel hasonlíthatók össze.)
 
 | Módszer | Beállítások | Pontosság |
 |---|---|---:|
-| Döntési fa, Gini | `max_depth=21`, `min_samples_leaf=1` (a 0 helyett) | 80,3% |
+| Döntési fa, Gini | `max_depth=21`, `min_samples_leaf=1` | 80,3% |
 | Döntési fa, Gini | `max_depth=15`, `min_samples_leaf=5` | 83,1% |
 
 ### Eredmények
