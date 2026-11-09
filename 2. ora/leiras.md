@@ -25,13 +25,13 @@ Három Gini-alapú döntési fát tanítottam külön-külön, rétegzett, véle
 |---|---|---:|---:|
 | Döntési fa, Gini | `max_depth=21`, `min_samples_leaf=1` (0 helyett) | 93,4% | 80,3% |
 | Döntési fa, Gini | `max_depth=15`, `min_samples_leaf=5` | 86,7% | 83,1% |
-| Döntési fa, Gini | `max_depth=10`, `min_samples_leaf=10` | 85,7% | 77,0% |
+| Döntési fa, Gini | `max_depth=21`, `min_samples_leaf=10` | 85,7% | 77,0% |
 
 ## Eredmények
 
-- **21-es mélység:** [ábra](./decision_tree_depth21_leaf1.png) · [jelentés](./decision_tree_depth21_leaf1.txt) · [modell](./decision_tree_depth21_leaf1_model.joblib) · [előrejelzések](./decision_tree_depth21_leaf1_predictions.csv)
-- **15-ös mélység:** [ábra](./decision_tree_depth15_leaf5.png) · [jelentés](./decision_tree_depth15_leaf5.txt) · [modell](./decision_tree_depth15_leaf5_model.joblib) · [előrejelzések](./decision_tree_depth15_leaf5_predictions.csv)
-- **10-es mélység:** [ábra](./decision_tree_depth10_leaf10.png) · [jelentés](./decision_tree_depth10_leaf10.txt) · [modell](./decision_tree_depth10_leaf10_model.joblib) · [előrejelzések](./decision_tree_depth10_leaf10_predictions.csv)
+- **21-es mélység, levélminimum 1:** [ábra](./decision_tree_depth21_leaf1.png) · [jelentés](./decision_tree_depth21_leaf1.txt) · [modell](./decision_tree_depth21_leaf1_model.joblib) · [előrejelzések](./decision_tree_depth21_leaf1_predictions.csv)
+- **15-ös mélység, levélminimum 5:** [ábra](./decision_tree_depth15_leaf5.png) · [jelentés](./decision_tree_depth15_leaf5.txt) · [modell](./decision_tree_depth15_leaf5_model.joblib) · [előrejelzések](./decision_tree_depth15_leaf5_predictions.csv)
+- **21-es mélység, levélminimum 10:** [ábra](./decision_tree_depth21_leaf10.png) · [jelentés](./decision_tree_depth21_leaf10.txt) · [modell](./decision_tree_depth21_leaf10_model.joblib) · [előrejelzések](./decision_tree_depth21_leaf10_predictions.csv)
 - [Kísérletek összefoglalója](./decision_tree_comparison.txt)
 
 ## Források
